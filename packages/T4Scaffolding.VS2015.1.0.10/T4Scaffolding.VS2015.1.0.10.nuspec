@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>T4Scaffolding.VS2015</id>
+    <version>1.0.10</version>
+    <title>T4Scaffolding (Fix VS2013 &amp; VS2015)</title>
+    <authors>David Fowler,  Scott Hanselman,  Steve Sanderson,  David Anderson</authors>
+    <owners>David Fowler,  Scott Hanselman,  Steve Sanderson,  David Anderson</owners>
+    <projectUrl>https://github.com/processedbeets/ASP.NET-MVC-Scaffolding</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fast and customizable way to build parts of your .NET application via templates</description>
+    <summary>A fast and customizable way to build parts of your .NET application via templates</summary>
+    <dependencies>
+      <dependency id="T4Scaffolding.Core.VS2015" />
+      <dependency id="EntityFramework" version="4.1.10311.0" />
+    </dependencies>
+  </metadata>
+</package>

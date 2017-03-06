@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PhoneBook_ASP.NETMVC.Models.Phone>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Phones</h2>
+
+<p>
+    @Html.ActionLink("Create New Phone", "Create", new { id = ViewBag.id })
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Person.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Person.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Number)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Person.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Person.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PhoneId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PhoneId })
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to Persons", "Index", "Persons")
+</div>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PhoneBook_ASP.NETMVC.Models.Person>
+
+@{
+    ViewBag.Title = "Count";
+}
+
+<h2>Count Phones</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+           @Html.DisplayName("Count:")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+           @Html.DisplayFor(modelItem => item.Phones.Count)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to Persons", "Index")
+</div>

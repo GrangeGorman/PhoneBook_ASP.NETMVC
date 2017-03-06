@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MvcScaffolding.VS2015</id>
+    <version>1.0.12</version>
+    <title>MvcScaffolding (Fix VS2013 &amp; VS2015)</title>
+    <authors>Scott Hanselman,  Steve Sanderson,  David Anderson</authors>
+    <owners>Scott Hanselman,  Steve Sanderson,  David Anderson</owners>
+    <projectUrl>https://github.com/processedbeets/ASP.NET-MVC-Scaffolding</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fast and customizable way to add controllers, views, and other items to your ASP.NET MVC application</description>
+    <summary>A fast and customizable way to add controllers, views, and other items to your ASP.NET MVC application</summary>
+    <dependencies>
+      <dependency id="T4Scaffolding.VS2015" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,41 @@
+﻿@model PhoneBook_ASP.NETMVC.Models.Phone
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Phone</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Phone</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Person.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Person.FirstName)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Person.LastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Person.LastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Number)
+    </div>
+</fieldset>
+@using (Html.BeginForm(new { id = Model.PhoneId }))
+{
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to Phones", "Index", new { id = ViewBag.id })
+    </p>
+}
